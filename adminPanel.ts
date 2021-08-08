@@ -50,7 +50,7 @@ export function AdminPanel(
                         gesturesArr.push(PAN);
                         evalGestures();
                     } else if (quadrants.length >= panQuadrantPath.length) {
-                        gesturesArr = [];
+                        quadrants = [];
                         sub.unsubscribe();
                     }
 

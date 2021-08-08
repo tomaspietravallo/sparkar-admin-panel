@@ -1,6 +1,10 @@
 # sparkar-admin-panel
 A simple, TouchGesture based, approach at hiding content not relevant to a user
 
+## Disclaimer
+> This techincally doesn't follow the guidelines. Use at your own discretion. I do not encourage you to publish effects that do not adhere to the guidelines/policies
+> 
+> ["1.2. Functionality. Effects must not contain any hidden or unexpected features or functionality."](https://sparkar.facebook.com/ar-studio/learn/publishing/spark-ar-review-policies)
 
 ## Example
 ```typescript
@@ -19,7 +23,7 @@ const AP = AdminPanel({
     // 2 - 3
 });
 
-// If the "password" is inputted correcly, then... 👇
+// If the "password" is inputted correctly, then... 👇
 AP.then(async ()=>{
     NativeUI.slider.visible = true;
     Patches.inputs.setScalar('secret-setting', NativeUI.slider.value);
